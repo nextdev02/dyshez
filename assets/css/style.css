@@ -1,0 +1,348 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Custom */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:focus {
+    outline: 0;
+}
+
+.pink
+{
+    color: #E3026F;
+}
+
+
+/* Main Section */
+
+section
+{
+    margin: o auto;
+    position: relative;
+    
+}
+
+.home
+{   background-image: url("../images/Ellipse\ 4.png");
+    background-repeat: no-repeat;
+    background-size: 75% 90%;
+    max-height: 1117px;
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
+.container
+{
+    padding: 80px;
+}
+
+.content
+{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 160px;
+    height: 40px;
+}
+
+.details
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.details h1
+{
+    font-weight: 800;
+    line-height: 50px;
+    font-size: 38px;
+    padding-top: 44px;
+    padding-bottom: 10px;
+}
+
+.details p
+{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.button
+{
+    display: flex;
+    padding-top: 44px;
+}
+
+.button a
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    background-color: #E3026F;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.button svg
+{
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover svg
+{
+    padding-left: 10px;
+}
+
+.button a:hover
+{
+    background-color: #F7268B;
+}
+
+.appimage
+{
+    width: 50%;
+}
+
+.image-left
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.image-left img
+{
+    width: 220px;
+}
+
+.image-right
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.image-right img
+{
+    width: 220px;
+}
+
+
+@media (max-width:1100px) 
+{
+    .details h1
+    {
+
+        font-size: 33px;
+    }
+
+    .details p
+    {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:1024px) 
+{
+    .home
+    {
+        max-height: 1194px;
+        max-width: 834px;
+        background-size: 90% 75%;
+    }
+
+    .content
+    {
+        flex-direction: column;
+    }
+
+
+    .details
+    {
+        width: 100%;
+    }
+
+    .appimage
+    {
+        width: 578px;
+        height: 620px;
+        padding-top: 50px;
+    }  
+
+}
+
+@media (max-width:750px) 
+{
+
+    .container
+    {
+        padding: 45px;
+    }
+
+}
+
+@media (max-width:640px) 
+{
+
+    .home
+    {
+        height: 844px;
+        width: 390px;
+        background-size: 160% 65%;
+        overflow: hidden;
+    }
+
+    .container
+    {
+        padding: 40px 20px;
+    }
+
+    .logo
+    {
+        width: 116px;
+        height: 28px;
+    }
+
+    .details
+    {
+        text-align: center;
+        align-items: center;
+    }
+
+    .details h1
+    {
+        line-height: 32px;
+        font-size: 26px;
+        padding-top: 30px;
+    }
+
+    .details p
+    {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .button
+    {
+        display: flex;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+
+    .button a
+    {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .appimage
+    {
+        padding-top: 40px;
+        width: 493px;
+        height: 527px;
+        margin-left: 170px;
+    }  
+
+    .image-right
+    {
+        display: none;
+    }
+
+    .image-left img
+    {
+        width: 120px;
+    }
+
+
+}
