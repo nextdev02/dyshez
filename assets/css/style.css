@@ -8,15 +8,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+
 }
 
 a {
@@ -40,49 +39,12 @@ h4 {
     font-size: 22px;
 }
 
-h5 {
-    font-size: 14px
-}
-
-h6 {
-    font-size: 13px
-}
-
-*,
-*::after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-    color: #212121;
-}
-
-button:focus {
-    outline: none;
-}
-
 
 a {
     color: #000000;
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-:focus {
-    outline: 0;
-}
 
 .pink
 {
@@ -92,31 +54,26 @@ img {
 
 /* Main Section */
 
-section
-{
-    margin: o auto;
-    position: relative;
-    
-}
 
 .home
 {   background-image: url("../images/Ellipse\ 4.png");
     background-repeat: no-repeat;
-    background-size: 75% 90%;
-    max-height: 1117px;
+    background-size: 80% 90%;
     max-width: 1728px;
+    height: 99vh;
     margin: 0 auto;
+    padding: 60px;
+    background-position: left top;
+
 }
 
 .container
 {
-    padding: 80px;
+    margin: 0;
 }
 
 .content
 {
-    display: flex;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,6 +83,11 @@ section
 {
     width: 160px;
     height: 40px;
+}
+
+.logo  img
+{
+    width: 100%;
 }
 
 .details
@@ -140,7 +102,7 @@ section
     font-weight: 800;
     line-height: 50px;
     font-size: 38px;
-    padding-top: 44px;
+    padding-top: 34px;
     padding-bottom: 10px;
 }
 
@@ -154,7 +116,7 @@ section
 .button
 {
     display: flex;
-    padding-top: 44px;
+    padding-top: 34px;
 }
 
 .button a
@@ -189,31 +151,46 @@ section
 .appimage
 {
     width: 50%;
+    padding-left: 20px;
+}
+
+.appimage img
+{
+    width: 100%;
+}
+
+.bottom
+{
+    position: relative;
 }
 
 .image-left
 {
+    width: 200px;
     position: absolute;
-    bottom: 0;
     left: 0;
-
+    bottom: 0;
 }
 
 .image-left img
 {
-    width: 220px;
+    width: 100%;
+    margin-bottom: -14px;
+    
 }
 
 .image-right
 {
+    width: 200px;
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
 }
 
 .image-right img
 {
-    width: 220px;
+    width: 100%;
+    margin-bottom: -14px;
 }
 
 
@@ -233,20 +210,18 @@ section
 }
 
 
-@media (max-width:1024px) 
+@media (max-width:834px) 
 {
     .home
     {
-        max-height: 1194px;
-        max-width: 834px;
-        background-size: 90% 75%;
+        background-size: 95% 65%;
+        height: fit-content;
     }
 
     .content
     {
         flex-direction: column;
     }
-
 
     .details
     {
@@ -262,37 +237,27 @@ section
 
 }
 
-@media (max-width:750px) 
+@media (max-width:767px) 
 {
-
-    .container
+    .home
     {
-        padding: 45px;
+        background-size: 145% 65%;
     }
-
 }
 
-@media (max-width:640px) 
+
+
+@media (max-width:390px) 
 {
 
     .home
     {
-        height: 844px;
-        width: 390px;
-        background-size: 160% 65%;
+        height: fit-content;
+        background-size: 180% 52%;
         overflow: hidden;
-    }
-
-    .container
-    {
         padding: 40px 20px;
     }
 
-    .logo
-    {
-        width: 116px;
-        height: 28px;
-    }
 
     .details
     {
@@ -300,10 +265,16 @@ section
         align-items: center;
     }
 
+    .logo 
+    {
+        height: 28px;
+        width: 116px;
+    }
+
     .details h1
     {
         line-height: 32px;
-        font-size: 26px;
+        font-size: 25px;
         padding-top: 30px;
     }
 
@@ -317,7 +288,7 @@ section
     {
         display: flex;
         padding-top: 30px;
-        font-size: 15px;
+
     }
 
     .button a
@@ -343,6 +314,4 @@ section
     {
         width: 120px;
     }
-
-
 }
