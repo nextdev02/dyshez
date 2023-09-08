@@ -215,7 +215,7 @@ a {
     .home
     {
         background-size: 95% 65%;
-        height: fit-content;
+        height: 100vh;
     }
 
     .content
