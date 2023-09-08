@@ -215,7 +215,8 @@ a {
     .home
     {
         background-size: 95% 65%;
-        height: 100vh;
+        height: max-content;
+
     }
 
     .content
@@ -257,9 +258,8 @@ a {
 
     .home
     {
-        height: 100vh;
+        height: max-content;
         background-size: 180% 52%;
-        overflow: hidden;
         padding: 40px 20px;
     }
 
