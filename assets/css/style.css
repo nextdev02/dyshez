@@ -242,6 +242,11 @@ a {
     .home
     {
         background-size: 145% 65%;
+        overflow: hidden;
+    }
+    .image-right
+    {
+        display: none;
     }
 }
 
@@ -252,7 +257,7 @@ a {
 
     .home
     {
-        height: fit-content;
+        height: 100vh;
         background-size: 180% 52%;
         overflow: hidden;
         padding: 40px 20px;
@@ -305,10 +310,7 @@ a {
         margin-left: 170px;
     }  
 
-    .image-right
-    {
-        display: none;
-    }
+
 
     .image-left img
     {
