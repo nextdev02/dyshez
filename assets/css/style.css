@@ -54,17 +54,29 @@ a {
 
 /* Main Section */
 
+.bg
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../images/Ellipse\ 4.png");
+    background-size: 75%;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    z-index: -10;
+    overflow: hidden;
+}
+
 
 .home
-{   background-image: url("../images/Ellipse\ 4.png");
-    background-repeat: no-repeat;
-    background-size: 80% 90%;
+{   
     max-width: 1728px;
     height: 99vh;
     margin: 0 auto;
     padding: 60px;
-    background-position: left top;
-
+    z-index: 10;
 }
 
 
@@ -144,8 +156,20 @@ a {
     background-color: #F7268B;
 }
 
+.homeimage
+{
+    width: 50%;
+    padding-left: -30px;
+}
+
+.homeimage img
+{
+    width: 100%;
+}
+
 .appimage
 {
+    display: none;
     width: 50%;
     padding-left: 20px;
 }
@@ -207,9 +231,15 @@ a {
 
 @media (max-width:1024px) 
 {
+
+    .bg
+    {
+        background-size: 890px;
+    }
+
     .home
     {
-        background-size: 95% 65%;
+
         height: fit-content;
 
     }
@@ -224,8 +254,19 @@ a {
         width: 100%;
     }
 
+    .details h1 , p
+    {
+        width: 80%;
+    }
+
+    .homeimage
+    {
+        display: none;
+    }
+
     .appimage
     {
+        display: block;
         width: 578px;
         height: 620px;
         padding-top: 50px;
@@ -245,7 +286,10 @@ a {
         height: fit-content;
         overflow: hidden;
     }
-
+    .details h1 , p
+    {
+        width: 100%;
+    }
 
     .appimage
     {
@@ -304,7 +348,7 @@ a {
 
 
 
-@media (max-width:490px) 
+@media (max-width:550px) 
 {
 
     .home
